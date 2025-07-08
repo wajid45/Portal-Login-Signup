@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyApp" parent="Theme.AppCompat.DayNight.NoActionBar">
+    </style>
+
+    <style name="Theme.PortalLoginSignup" parent="Base.Theme.PortalLoginSignup"/>
+    <style name="Theme.App.PortalLoginSignup" parent="Theme.PortalLoginSignup">
+        <item name="android:windowBackground">@color/pink</item>
+        <item name="android:background">@color/pink</item>
+        <item name="windowSplashScreenBackground">@color/pink</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/bird_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.MyApp</item>
+
+    </style>
+
+</resources>

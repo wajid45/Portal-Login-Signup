@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.App.PortalLoginSignup" parent="Theme.PortalLoginSignup">
+        <item name="windowSplashScreenBackground">#a6c1ee</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">#a6c1ee</item>
+        <item name="android:windowSplashScreenAnimatedIcon" >@drawable/bird_logo </item>
+        <item name="postSplashScreenTheme">@style/Theme.MyApp</item>
+
+    </style>
+</resources>
