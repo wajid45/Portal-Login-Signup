@@ -1,16 +1,18 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
     <style name="Theme.MyApp" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- App-specific theme customizations -->
+        <item name="android:statusBarColor">@color/white</item>
     </style>
 
-    <style name="Theme.PortalLoginSignup" parent="Base.Theme.PortalLoginSignup"/>
-    <style name="Theme.App.PortalLoginSignup" parent="Theme.PortalLoginSignup">
-        <item name="android:windowBackground">@color/pink</item>
-        <item name="android:background">@color/pink</item>
-        <item name="windowSplashScreenBackground">@color/pink</item>
+    <style name="Theme.PortalLoginSignup" parent="Theme.AppCompat.Light.NoActionBar" />
+    <style name="Theme.PortalLoginSignup.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/blue</item>
         <item name="windowSplashScreenAnimatedIcon">@drawable/bird_logo</item>
-        <item name="postSplashScreenTheme">@style/Theme.MyApp</item>
+        <item name="postSplashScreenTheme">@style/Theme.PortalLoginSignup</item>
+    </style>
 
+    <style name="App.Custom.Indicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">#4F5868</item>
     </style>
 
 </resources>

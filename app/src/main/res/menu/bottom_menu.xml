@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_chat"
+        android:title="Chats"
+        android:icon="@drawable/chat"
+        />
+    <item
+        android:id="@+id/bottom_community"
+        android:title="Community"
+        android:icon="@drawable/community"
+        />
+    <item
+        android:id="@+id/bottom_logs"
+        android:title="Logs"
+        android:icon="@drawable/logs"
+        />
+</menu>

@@ -5,21 +5,21 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.ButtonBarLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class loginPage : AppCompatActivity() {
+class signup_page : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login_page)
+        setContentView(R.layout.activity_signup_page)
 
-        val signupbtn: Button = findViewById(R.id.signup2)
-        signupbtn.setOnClickListener {
-            val intent = Intent(this, signup_page::class.java) // Replace with your actual home activity
+    val loginbtn: Button = findViewById(R.id.loginbtn2)
+        loginbtn.setOnClickListener {
+            val intent = Intent(this, loginPage::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
             startActivity(intent)
             finish()
         }
     }
+
 }
